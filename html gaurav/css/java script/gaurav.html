@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2> Java script stement</h2>
+    <p> this addition</p>
+    <p id="demo"></p>
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+    <script>
+        let x,y,z;
+        x=10;
+        y=20;
+        z=x+y;
+        document.getElementById("demo").innerHTML= "the value of z is : " + z +" .";
+       
+        let x1,x2,x3,p;
+        x1 = 34.00;
+ x2 = 34
+ 
+  x3 = 31.4;
+  p = x1+x2+x3;
+document.getElementById("demo").innerHTML ="the addition is :"+p
+
+// Change heading:
+document.getElementById("myH").innerHTML = "JavaScript Comments";
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+function Displaydate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+
+<h2>JavaScript HTML Events</h2>
+<p>Click the button to display the date.</p>
+
+<button onclick="Displaydate()">The time is?</button>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox tut</title>
+    <style>
+.container{
+   
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    /*initialize a  container as flex box*/
+    display: flex;
+    flex-wrap: wrap;/* defaault value is no wrap*/
+    /* flex property for flex containner*/
+    flex-direction:row;
+   /* flex-flow: row-reverse wrap; defalt  value of flex is row and 
+   justify-content: center;    justify  
+   justify-content: space-around;*/
+   align-items: center;
+   align-items: flex-start;
+   align-items: stretch;
+}
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: tomato;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+}
+#item1{
+    order: 2;
+flex-grow: ;
+}
+#item2{
+
+}
+#item3
+
+
+    </style>
+</head>
+<body>
+    <h1> This is flexbox</h1>
+    <div class="container">
+<div class="item" id="item1">first box</div>
+<div class="item" id="item2"> Second Box</div>
+ <div class="item" id="item3">Tired box</div>
+
+
+    </div>
+</body>
+</html>

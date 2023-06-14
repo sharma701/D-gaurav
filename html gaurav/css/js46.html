@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        table {
+            background-color: aqua;
+            border: 2px solid red;
+        }
+        input{
+            color: rgb(255, 166, 0);
+        }
+    </style>
+</head>\
+
+<body>
+    
+
+        <table  align="center" border>
+           <Tr align="center"> <td colspan="2">
+               Student Marks Report</td>
+             </Tr>
+            <tr>
+                <td><label>Student Name</label></td>
+                <td><input type="text" id="Sname"></td>
+            </tr>
+            <tr>
+                <td><label> Roll No</label></td>
+                <td><input type="text" id="rno"></td>
+            </tr>
+            <tr align="center"><td colspan="2"><label>Marks</label></td></tr>
+            <tr>
+                <td><label>HTML</label></td>
+                <td><input type="text" id="hm"></td>
+            </tr>
+            <tr>
+                <td><label> CSS</label></td>
+                <td><input type="text" id="cm"></td>
+            </tr>
+            <tr>
+                <td><label> JS</label></td>
+                <td><input type="text" id="jm"></td>
+            </tr>
+            <tr align="center">
+                <td  colspan="2">
+                    <button onclick="getResult()">Get Result</button></td>
+                    </tr>
+
+                <tr align="center">
+                    <td  colspan="2"><output id="total"></output></td>
+                        </tr>
+                    <tr align="center">
+                        <td  colspan="2"><output id="average"></output></td>
+                            
+                        </tr>
+                        <tr align="center">
+                            <td  colspan="2"><output id="grade"></output></td>
+                                
+                            </tr>
+                    
+                
+                
+                
+            </table>
+            
+            <script>
+function getResult(){
+    let h,c,j,tot,avg,grd;
+    //coll datafrom UI
+    h= parseInt(hm.value);
+    c= parseInt(cm.value);
+     j= parseInt(jm.value);
+     tot=h+c+j;
+     avg=tot/3;
+     if(h>=40 && c>=40 && j>=40){
+      if(avg>=80)
+      grd="A+";
+      else if(avg>=70)
+      grd="A"
+      else if(avg>=60)
+      grd="B+";
+      else if(avg>=50)
+      grd="B"
+      else
+      grd="D";
+
+     }
+     else{
+        grd="fail"
+     }
+
+
+     total.value="Total marks:"+tot;
+     average.value="average value:"+avg
+     grade.value="Grade:"+grd;
+}
+    </script>
+</body>
+</html>

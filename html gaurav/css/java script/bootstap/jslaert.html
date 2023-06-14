@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d{
+            width: 50%;
+            background-color: aqua;
+            height: 200px;
+            color: red;
+            text-align: center;
+            margin: auto;
+        }
+        input output{
+            font-size: 40px;
+            text-align: center;
+
+        }
+        button{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="d">
+    <!--<h2>Arithmetic calculater</h2>
+    <label>principle amount</label><br>
+    <input type="text" id="pamt"/><span>&#8377</span><br>
+    <label> rate of interest</label> <br>
+
+    <input type="text" id="roi"/><span>%</span><br>
+    <label >Time</label><br>
+    <input type="text" id="time"/><span> year(s)</span> <br>
+    <button onclick=" compute()">Calculate</button>
+    </div>
+    <script >
+        function compute(){
+            let p=pamt.value;
+            let r=roi.value;
+            let t=time.value;
+            let si=p*r*t/100;
+          //document.write("Interest Amount:" +si)
+          alert("Interest amount:Rs"+si)
+        }
+    </script>-->
+    <div id="d">
+        <h2>Arithmetic Operation</h2>
+        <input type="text" id="firstNum"/><br>
+        <input type="text" id="secNum"><br>
+        
+        <input type="text" id="result"/><br>
+        
+
+        <!--<button onclick="alert(firstNum.value*secNum.value)">*</button>
+        <button onclick="res.value=firstNum.value*secNum.value">*</button>
+        <button onclick="res.value=firstNum*secNum"></button>
+    parseInt() == change mode of the data stringto  int
+parseFloat==  change mde of data string tofloat -->
+        <button onclick="result.value=firstNum.value*secNum.value">*</button>
+    
+    <button onclick="result.value=parseInt(firstNum.value)+parseInt(secNum.value)">+</button>
+    <button onclick="result.value=firstNum.value-secNum.value">-</button>
+    <button onclick="result.value=firstNum.value/secNum.value">/</button>
+    <button onclick="result.value=firstNum.value%secNum.value">%</button>
+    <button onclick="result.value=firstNum.value**secNum.value">^</button>
+    </div>
+</body>
+</html>

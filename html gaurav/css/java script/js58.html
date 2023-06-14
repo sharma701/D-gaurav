@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> set time</title>
+</head>
+<body>
+    <div class="container">This is a container </div>
+    <script>
+        console.log("This is tut 58")
+        // set timeout= allow us torun thw function once after the intervel of time
+        // clan out= allows us to run the repetwlly after the intervel of time
+        function greet(name ,byetext){
+            console.log("Hello good mng" + name +"  " + byetext);
+        }
+        //greet();
+       
+        //setTimeout(greet,5000 ,"  gaurav","takecare") 
+        //setTimeout(greet(),5000 ,"  gaurav","takecare") wrongbcz it is calling functio
+        timeout= setTimeout(greet,5000 ,"  gaurav","takecare") ;
+        console.log(timeout);
+        
+    </script>
+</body>
+</html>

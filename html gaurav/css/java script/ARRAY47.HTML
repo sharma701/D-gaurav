@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[];
+        a[0]=12;
+        a[1]=23;
+        a[2]=34;
+        a[3]=45;
+        document.write("a[0]=>"+a[0]+"<br>");
+        document.write("a[1]=>"+a[1]+"<br>");
+        document.write("a[2]=>"+a[2]+"<br>");
+        document.write("size=>"+ a.length+"<br>");
+        document.write(+a +"<br>");
+        //array initialization
+        let runs=[4,10,8,12,1,8];
+        let total=0;
+        //d.w(a[0]);
+        for(i=0;i<runs.length;i++){
+            document.write("over"+(i+1)+":"+runs[i]+"<br>");
+            total=total+runs[i];
+        }
+        document.write("totaal runs:"+total+"<br>");
+        document.write("ovr:"+runs.length+"<br>");
+
+    </script>
+</body>
+</html>
