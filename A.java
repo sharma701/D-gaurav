@@ -1,4 +1,6 @@
 public class A {
-	int x=10;    //not
+	int x=10;
+x=25;
+    //not
 }
 
